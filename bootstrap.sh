@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install utilities
-yum -y install wget curl which
+yum -y install wget curl which tzdata
 
 # download and install gosu
 arch=amd64
