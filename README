@@ -1,0 +1,6 @@
+This is a stripped down image for running java applications. 
+
+It uses the Oracle JDK. You must accept the Oracle license in order
+to use this image.
+
+It is accessble via Docker Hub as `7thsense/java:8`
