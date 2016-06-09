@@ -1,4 +1,4 @@
-VERSION=8u74
+VERSION=8u92
 
 .PHONY: default
 default:
