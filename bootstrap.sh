@@ -15,7 +15,7 @@ chmod +x /usr/local/bin/gosu
 # download and install oracle jdk
 cd /opt
 wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-	http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jdk-8u92-linux-x64.rpm -O jdk-8-linux-x64.rpm
+	http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.rpm -O jdk-8-linux-x64.rpm
 yum install -y jdk-8-linux-x64.rpm
 rm -f jdk-8-linux-x64.rpm
 
