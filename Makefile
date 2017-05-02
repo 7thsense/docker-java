@@ -1,4 +1,4 @@
-VERSION=8u121
+VERSION=8u131
 
 .PHONY: default
 default:
@@ -7,4 +7,4 @@ default:
 publish: default
 	docker build -t 7thsense/java:8 -t 7thsense/java:${VERSION} .
 	docker push 7thsense/java:${VERSION}
-	docker push 7thsense/java:8 
+	docker push 7thsense/java:8
