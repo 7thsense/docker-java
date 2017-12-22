@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install utilities
-yum -y install wget curl which tzdata
+yum -y install wget curl which tzdata man alternatives
 
 # download and install gosu
 arch=amd64
@@ -14,10 +14,11 @@ chmod +x /usr/local/bin/gosu
 
 # download and install oracle jdk
 cd /opt
-wget --no-cookies --quiet --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-	http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm -O jdk-8-linux-x64.rpm
+wget --quiet --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+	http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.rpm -O jdk-8-linux-x64.rpm
 yum install -y jdk-8-linux-x64.rpm
 rm -f jdk-8-linux-x64.rpm
 
 # clean up
 yum clean all
+rm -rf /var/cache/yum
